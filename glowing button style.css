@@ -1,0 +1,42 @@
+body{
+    font-family: "poppins" , sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background: #000;
+}
+
+.yousri{ 
+    width: 120px;
+    height: 60;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.yousri:hover {
+    background-color: white;
+    color: #000;
+    transition: 1s ease;
+}
+.yousri::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50px;
+    background: transparent;
+    height: 50%;
+    width:100%; 
+    transform: perspective(1em) rotate(0deg) scale(1, 0.35);
+    filter: blur(8px);
+    transition: 1s ease;
+}
+.yousri:hover::before{
+    background: white;
+
+}
+
